@@ -1,0 +1,18 @@
+baseURL = 'https://philtweir.github.io/mapazan'
+languageCode = 'en-gb'
+title = 'Experimenting with maplibre and Malazan'
+theme = 'govukhugo'
+publishDir = 'docs'
+canonifyurls = false
+
+pygmentsUseClasses = true
+
+[params]
+  govuk = false
+  product = 'Experimenting with maplibre and Malazan'
+  phase = 'alpha'
+
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<link rel="stylesheet" href="{{ "css/map.css" | absURL }}">
+
+{{ if isset .Params "custom_title" }}
+<h1 class="govuk-heading-xl">{{ $.Param "custom_title" }}</h1>
+{{ else }}
+<h1 class="govuk-heading-xl">{{ .Title }}</h1>
+{{ end }}
+
+<div class="govuk-body">
+
+    {{ .Content }}
+
+</div>
+
+{{- $js := resources.Get "map.ts" -}}
+{{ $params := (dict "search_config" site.Params.search_config "is_production" hugo.IsProduction ) }}
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2020" "params" $params }}
+{{ $js = $js | js.Build $opts }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | fingerprint }}
+{{ end }}
+<script
+  src="{{ $js.RelPermalink }}"
+  {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}
+  type="module">
+</script>
+
+{{ end }}
