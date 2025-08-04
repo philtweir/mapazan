@@ -1,1 +1,14 @@
-{"type":"FeatureCollection","creator":"svg2geojson v0.7.2","features":[{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[10.360539,-10.197185]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[5.900792,-9.205303]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[4.196428,-8.181142]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[11.873207,-7.309105]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[12.171416,-8.701481]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[9.171708,-13.569271]}},{"type":"Feature","properties":null,"geometry":{"type":"Point","coordinates":[14.578578,-3.346417]}}]}
+{
+"type": "FeatureCollection",
+"creator": "svg2geojson v0.7.2",
+"name": "sevencities-poly-cities-big",
+"features": [
+{ "type": "Feature", "properties": { "name": "Ubaryd" }, "geometry": { "type": "Point", "coordinates": [ 10.360539, -10.197185 ] } },
+{ "type": "Feature", "properties": { "name": "Ugarat" }, "geometry": { "type": "Point", "coordinates": [ 5.900792, -9.205303 ] } },
+{ "type": "Feature", "properties": { "name": "Yath Alban" }, "geometry": { "type": "Point", "coordinates": [ 4.196428, -8.181142 ] } },
+{ "type": "Feature", "properties": { "name": "Ehrlitan" }, "geometry": { "type": "Point", "coordinates": [ 11.873207, -7.309105 ] } },
+{ "type": "Feature", "properties": { "name": "Karashimesh" }, "geometry": { "type": "Point", "coordinates": [ 12.171416, -8.701481 ] } },
+{ "type": "Feature", "properties": { "name": "Aren" }, "geometry": { "type": "Point", "coordinates": [ 9.171708, -13.569271 ] } },
+{ "type": "Feature", "properties": { "name": "Karakarang" }, "geometry": { "type": "Point", "coordinates": [ 14.578578, -3.346417 ] } }
+]
+}
