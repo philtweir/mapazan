@@ -2,7 +2,7 @@ import { Popup, Source, Marker, Map, IControl, NavigationControlOptions, Navigat
 
 function addMap(container: HTMLElement, center: [number, number], zoom: [number]) {
   var map = new Map({
-    style: 'https://tiles.openfreemap.org/styles/bright',
+    style: '../malazan_seven_cities.json',
     pitch: 20,
     bearing: 0,
     container: container,

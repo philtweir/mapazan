@@ -1,0 +1,73 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {},
+  "sources": {
+    "sevencities-poly-moved": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-moved.geojson"
+    },
+    "sevencities-poly-cities": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities.geojson"
+    },
+    "sevencities-poly-cities-big": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities-big.geojson"
+    },
+    "sevencities-poly-cities-water-bodies": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities-water-bodies.geojson"
+    },
+    "sevencities-poly-deserts": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-deserts.geojson"
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "sea",
+      "type": "background",
+      "paint": {"background-color": "rgba(211, 229, 255, 1)"}
+    },
+    {
+      "id": "sevencities-poly-moved",
+      "type": "fill",
+      "source": "sevencities-poly-moved",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(234, 255, 224, 1)"}
+    },
+    {
+      "id": "sevencities-poly-deserts",
+      "type": "fill",
+      "source": "sevencities-poly-deserts",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(255, 248, 192, 1)", "fill-opacity": 1}
+    },
+    {
+      "id": "sevencities-poly-cities",
+      "type": "circle",
+      "source": "sevencities-poly-cities",
+      "paint": {
+        "circle-radius": 3,
+        "circle-stroke-color": "rgba(162, 89, 30, 1)",
+        "circle-opacity": 0,
+        "circle-stroke-width": 1
+      }
+    },
+    {
+      "id": "sevencities-poly-cities-big",
+      "type": "circle",
+      "source": "sevencities-poly-cities-big",
+      "paint": {
+        "circle-color": "rgba(203, 167, 135, 1)",
+        "circle-radius": 5,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": "rgba(255, 255, 255, 1)"
+      }
+    }
+  ],
+  "id": "dd3l8hu"
+}

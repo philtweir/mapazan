@@ -6,4 +6,4 @@ layout = 'map'
 draft = false
 +++
 
-{{< map "[0, 0]" 13 >}}
+{{< map "[13, -8]" 6 >}}

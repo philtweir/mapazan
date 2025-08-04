@@ -1,0 +1,166 @@
+{
+  "version": 8,
+  "name": "Malazan Seven Cities",
+  "metadata": {"maputnik:renderer": "mlgljs"},
+  "sources": {
+    "sevencities-poly-moved": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-moved.geojson"
+    },
+    "sevencities-poly-cities": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities.geojson"
+    },
+    "sevencities-poly-cities-big": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities-big.geojson"
+    },
+    "sevencities-poly-cities-water-bodies": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-cities-water-bodies.geojson"
+    },
+    "sevencities-poly-deserts": {
+      "type": "geojson",
+      "data": "https://philtweir.github.io/mapazan/geojson/sevencities-poly-deserts.geojson"
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "sea",
+      "type": "background",
+      "paint": {"background-color": "rgba(211, 229, 255, 1)"}
+    },
+    {
+      "id": "sevencities-poly-moved",
+      "type": "fill",
+      "source": "sevencities-poly-moved",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(234, 255, 224, 1)"}
+    },
+    {
+      "id": "sevencities-poly-deserts",
+      "type": "fill",
+      "source": "sevencities-poly-deserts",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(255, 248, 192, 1)", "fill-opacity": 1}
+    },
+    {
+      "id": "sevencities-poly-cities-big",
+      "type": "circle",
+      "source": "sevencities-poly-cities-big",
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgba(127, 127, 127, 1)",
+        "circle-stroke-color": "rgba(255, 255, 255, 1)",
+        "circle-opacity": 1,
+        "circle-stroke-width": 2
+      }
+    },
+    {
+      "id": "sevencities-poly-cities",
+      "type": "circle",
+      "source": "sevencities-poly-cities",
+      "paint": {
+        "circle-stroke-color": "rgba(255, 255, 255, 1)",
+        "circle-opacity": 1,
+        "circle-stroke-width": 1,
+        "circle-color": "rgba(191, 190, 168, 1)",
+        "circle-radius": 3
+      }
+    },
+    {
+      "id": "sevencities-poly-cities-water-bodies-2",
+      "type": "symbol",
+      "source": "sevencities-poly-cities-water-bodies",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": 12,
+        "text-pitch-alignment": "auto",
+        "symbol-z-order": "auto",
+        "symbol-placement": "point",
+        "text-allow-overlap": false,
+        "text-font": ["Noto Sans Regular"],
+        "symbol-avoid-edges": false,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.5]
+      },
+      "paint": {
+        "text-color": "rgba(93, 111, 211, 1)",
+        "icon-translate-anchor": "map",
+        "text-halo-color": "rgba(255, 255, 255, 0.61)",
+        "text-halo-width": 5,
+        "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "sevencities-poly-cities-2",
+      "type": "symbol",
+      "source": "sevencities-poly-cities",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-pitch-alignment": "auto",
+        "symbol-z-order": "auto",
+        "symbol-placement": "point",
+        "text-allow-overlap": false,
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 9,
+        "text-anchor": "bottom"
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "icon-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "sevencities-poly-cities-big-2",
+      "type": "symbol",
+      "source": "sevencities-poly-cities-big",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": 12,
+        "text-pitch-alignment": "auto",
+        "symbol-z-order": "auto",
+        "symbol-placement": "point",
+        "text-allow-overlap": false,
+        "text-font": ["Noto Sans Regular"],
+        "symbol-avoid-edges": false,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.5]
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "icon-translate-anchor": "map",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 0.5,
+        "text-halo-width": 5
+      }
+    },
+    {
+      "id": "sevencities-poly-deserts-2",
+      "type": "symbol",
+      "source": "sevencities-poly-deserts",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": 11,
+        "text-pitch-alignment": "auto",
+        "symbol-z-order": "auto",
+        "symbol-placement": "point",
+        "text-allow-overlap": false,
+        "text-font": ["Noto Sans Regular"],
+        "symbol-avoid-edges": false,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.5]
+      },
+      "paint": {
+        "text-color": "rgba(103, 106, 46, 1)",
+        "icon-translate-anchor": "map",
+        "text-halo-color": "rgba(255, 255, 255, 0.61)",
+        "text-halo-width": 5,
+        "text-halo-blur": 1
+      }
+    }
+  ],
+  "id": "dd3l8hu"
+}
