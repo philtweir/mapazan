@@ -10,7 +10,6 @@ pygmentsUseClasses = true
 [params]
   govuk = false
   product = 'Experimenting with maplibre and Malazan'
-  phase = 'alpha'
 
 
 [caches]
