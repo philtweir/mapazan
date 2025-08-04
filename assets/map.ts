@@ -3,7 +3,7 @@ import { Popup, Source, Marker, Map, IControl, NavigationControlOptions, Navigat
 function addMap(container: HTMLElement, center: [number, number], zoom: [number]) {
   var map = new Map({
     style: '../malazan_seven_cities.json',
-    pitch: 20,
+    pitch: 0,
     bearing: 0,
     container: container,
     center: center,
